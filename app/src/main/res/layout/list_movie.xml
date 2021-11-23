@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_movie"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="Judul"
+            app:layout_constraintBottom_toBottomOf="@+id/image_movie"
+            app:layout_constraintStart_toEndOf="@+id/image_movie"
+            app:layout_constraintTop_toTopOf="@+id/image_movie" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_wishlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/wishlist_unselected"
+            app:layout_constraintBottom_toBottomOf="@+id/image_movie"
+            app:layout_constraintStart_toEndOf="@+id/image_movie" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_wishlist_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/wishlist_selected"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/image_movie"
+            app:layout_constraintStart_toEndOf="@+id/image_movie" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
