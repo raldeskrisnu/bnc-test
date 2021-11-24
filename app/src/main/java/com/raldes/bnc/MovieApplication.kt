@@ -14,6 +14,8 @@ class MovieApplication : Application() {
         super.onCreate()
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
+
+
         applicationComponent =
             DaggerApplicationComponent
             .builder()
